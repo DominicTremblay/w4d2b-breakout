@@ -1,7 +1,7 @@
 {
-  "user": "development",
-  "password": "development",
-  "database": "vagrant",
+  "user": "masterd",
+  "password": "masterd",
+  "database": "test",
   "hostname": "localhost",
   "port": 5432,
   "ssl": true
