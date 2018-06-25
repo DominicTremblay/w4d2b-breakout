@@ -11,5 +11,8 @@
   "dependencies": {
     "knex": "^0.14.6",
     "pg": "^7.4.3"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0"
   }
 }

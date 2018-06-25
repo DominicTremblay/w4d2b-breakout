@@ -19,10 +19,6 @@ exports.up = function(knex, Promise) {
   ]);
 };
 
-// table.foreign(['colA','colB'])
-//     .references(['colA','colB'])
-//     .on('tableB');
-
 // watch for the order of the drop tables
 exports.down = function(knex, Promise) {
   return Promise.all([

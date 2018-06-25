@@ -141,7 +141,8 @@ To create a seed file:
 
 Notes:
 
-- Seed files are executed in alpahbetical order
+- You can use Faker to create fake data
+- Seed files are executed in alphabetical order
 - Execute seed files of tables representing the one side of the relationship first
 - Execute seed files of tables with foreign keys second
 - Use truncate() instead of del() to reset the autoincrements ids
