@@ -1,0 +1,15 @@
+{
+  "name": "w4d2-jun18",
+  "version": "1.0.0",
+  "description": "w4d2 breakout about knex at Lighthouse Labs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.14.6",
+    "pg": "^7.4.3"
+  }
+}
