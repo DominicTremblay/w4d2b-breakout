@@ -13,8 +13,15 @@ exports.up = function(knex, Promise) {
       table.decimal("unit_price", 14, 2);
       table.integer("quantity");
       table
-        .foreign(["order_id", "product_id"])
-        .references(["orders.id", "products.id"]);
+        .foreign("order_id")
+        .references("id")
+        .on("orders")
+        .onDelete("CASCADE");
+      table
+        .foreign("product_id")
+        .references("id")
+        .on("products")
+        .onDelete("CASCADE");
     })
   ]);
 };

@@ -145,7 +145,8 @@ Notes:
 - Seed files are executed in alphabetical order
 - Execute seed files of tables representing the one side of the relationship first
 - Execute seed files of tables with foreign keys second
-- Use truncate() instead of del() to reset the autoincrements ids
+- Use truncate() instead of del() to reset the autoincrements ids (works only if you don't have a foreign key constraints) or
+  use knex.raw("ALTER SEQUENCE tablename_id_seq RESTART WITH 1")
 
 #.Executing Queries
 
